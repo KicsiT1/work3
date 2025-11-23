@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root 
+{
+    --HTextColor:#141513;
+    --PTextColor:#3C403A;
+    --UL_Li_Color:#3C403A;
+    --SpanTextColor:#2E5C1E;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Inter", sans-serif;
+    color: var(--HTextColor);
+}
+p
+{
+   
+    color: var(--PTextColor);
+}
+span
+{
+    font-family: "Inter Regular", sans-serif;
+    columns: var(--SpanTextColor);
+}
+button
+{
+    font-family: "Inter Regular", sans-serif;
+}
+ul li
+{
+    font-family: "Inter Regular", sans-serif;
+    color: var(--UL_Li_Color);
+}
