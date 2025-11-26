@@ -1,5 +1,82 @@
 :root 
 {
     --GreenButtonColor:#3A7326;
+    --ButtonTextColor:#3A7326;
+    --AhoverColor:#3A7326;
     --AColor:#282B27;
+    --ButtonBorderColor:#A6DC94;
+}
+/*=====Fejlec=====*/
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 24px 0px 24px 0px;
+    margin: 0px 40px 0px 40px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.header_left_side
+{
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.nav a
+{
+    font-size: 18px;
+    margin-right: 40px;
+    color: var(--AColor);
+    text-decoration: none;
+}
+
+.nav a img
+{
+    margin-left: 8px;
+}
+
+.nav a:hover
+{
+    color: var(--AhoverColor)
+}
+
+.header_right_side
+{
+    display: flex;
+    justify-content: space-between;
+    gap:12px
+}
+/*=====Fejlec->gombok=====*/
+.Demobtn,.Trialbtn
+{
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.Demobtn
+{
+    background-color: white;
+    color: var(--ButtonTextColor);
+    border: 2px solid var(--ButtonBorderColor);
+}
+.Demobtn:hover
+{
+    background-color: var(--GreenButtonColor);
+    color: white;
+    border: 2px solid var(--GreenButtonColor);
+}
+.Trialbtn
+{
+    background-color: var(--GreenButtonColor);
+    color: white;
+    border: none;
+}
+.Trialbtn:hover
+{
+    color: var(--ButtonTextColor);
+    background-color: white;
+    border: 2px solid var(--GreenButtonColor);
 }
