@@ -5,7 +5,9 @@
     --AhoverColor:#3A7326;
     --BoxShadowColor:#3A7326;
     --AColor:#282B27;
+    --AColor2:#3A7326;
     --ButtonBorderColor:#A6DC94;
+    --Pcolor:#3A7326;
 }
 /*=====Fejlec=====*/
 .header
@@ -53,7 +55,7 @@
     display: none;
 }
 /*=====Fejlec->gombok=====*/
-.Demobtn,.Trialbtn
+.Demobtn,.Trialbtn,.Learnbtn
 {
     padding: 16px 20px;
     font-size: 1.1rem;
@@ -61,13 +63,17 @@
     cursor: pointer;
     font-weight: bold;
 }
-.Demobtn
+.Learnbtn
+{
+    margin-left: 12px;
+}
+.Demobtn,.Learnbtn
 {
     background-color: white;
     color: var(--ButtonTextColor);
     border: 2px solid var(--ButtonBorderColor);
 }
-.Demobtn:hover
+.Demobtn:hover ,.Learnbtn:hover
 {
     background-color: var(--GreenButtonColor);
     color: white;
@@ -170,8 +176,6 @@
   position: relative;
 }
 
-
-
 .phone_drop_links ul li 
 {
     padding: 24px 0px 24px 0px;
@@ -212,6 +216,171 @@
 {
     float: right;
 }
+/*==============Main->Hero section==============*/
+.Hero_section
+{
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 112px 0px 80px 0px;
+}
+
+.Hero_section_flexbox
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.Flex_content1,.Flex_content2
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.Flex_content3
+{
+    display: flex;
+    margin-top: 16px;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.Hero_left_side h1
+{
+    font-size: 5.5rem;
+    margin-bottom: 32px;
+}
+.Hero_left_side p
+{
+    font-size: 1.5rem;
+    margin-bottom: 48px;
+    line-height: 2.5rem;
+}
+/*==============Partners section==============*/
+.Partners_section
+{
+    display: flex;
+    overflow-x: hidden;
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 32px 0px 32px 0px;
+}
+.Partners_section_group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    animation: spin 30s infinite linear;
+    padding-right: 1em;
+}
+.Partners_section_group::-webkit-scrollbar
+{
+    display: none;
+}
+.Partners_section_group>img 
+{
+    flex: 0 0 5em;
+}
+@keyframes spin {
+    from {translate: 0;}
+    to   {translate: -100%;}
+}
+/*==============About us section==============*/
+.About_us
+{
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 112px 0px 80px 0px;
+}
+.About_us p:first-child
+{
+    color: var(--Pcolor);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.About_us h2
+{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.About_us p
+{
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+    line-height: 2.5rem;
+}
+.About_us_flexcontetnt
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 52px;
+    
+}
+.About_us a
+{
+    color: var(--AColor2);
+}
+.About_us_flexcontetnt div h3
+{
+    font-size: 39px;
+}
+/*==============Solutions section==============*/
+.Solutions
+{
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 112px 0px 80px 0px;
+}
+
+.Solutions>div>p 
+{
+    text-align: center;
+    color: var(--Pcolor);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.Solutions>div>h3 
+{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+.Solutions_flex_content
+{
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.Solutions_flex_content_item
+{
+    border-top: 1px solid grey;
+}
+.Solutions_flex_content_item img
+{
+    margin: 40px 209px 92px 0px;
+}
+.Solutions_flex_content_item h3
+{
+    font-size: 2rem;
+}
+.Solutions_flex_content_item p
+{
+    font-size: 20px;
+    margin-top: 12px;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
 /*===================@media Queries===================*/
 @media screen and (max-width: 1200px) 
 {
