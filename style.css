@@ -415,11 +415,41 @@
     margin-bottom: 16px;
     font-size: 1.3rem;
 }
-
-
-
-
-
+/*===================experience section===================*/
+.experience_section
+{
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 112px 0px 80px 0px;
+}
+.experience_section_flexbox
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.experience_left_side_item h3
+{
+    font-size: 2.7rem;
+    margin-bottom: 16px;
+}
+.experience_left_side_item p
+{
+   font-size: 1rem;
+   line-height: 1.7rem;
+}
+.experience_left_side_item ul
+{
+    list-style-type: none;
+    list-style-image: url(/icons/Icon\ wrapper.png);
+    list-style-position: inside;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.experience_left_side_item li
+{
+    font-size: 1.4rem;
+}
 /*===================@media Queries===================*/
 @media screen and (max-width: 1200px) 
 {
