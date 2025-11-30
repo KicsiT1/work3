@@ -352,7 +352,6 @@
 {
     display: flex;
     gap: 32px;
-    flex-wrap: wrap;
 }
 .Solutions_flex_content_item
 {
@@ -372,10 +371,50 @@
     margin-top: 12px;
     line-height: 1.8rem;
 }
-
-
-
-
+/*===================Blog section===================*/
+.blog_section
+{
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 112px 0px 80px 0px;
+}
+.blog_section_text_content>p:first-child
+{
+    color: var(--Pcolor);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blog_section_text_content>h3
+{
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+.blog_section_text_content>p
+{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 80px;
+}
+.blog_section_flexbox
+{
+    display: flex;
+    gap: 32px;
+}
+.blog_section_flexbox_item p
+{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+}
+.blog_section_flexbox_item h3
+{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
 
 
 
