@@ -1,0 +1,146 @@
+:root
+{
+    --Black:black;
+    --White:white;
+    --Pcolor:#838B7F;
+}
+body
+{
+    background-color: var(--Black);
+}
+.Demobtn
+{
+    background-color: var(--Black);
+}
+.NTrialbtn:hover
+{
+    background-color: var(--Black);
+}
+.nav>ul>li>a
+{
+    color: var(--White);
+}
+.dropdown-content1 
+{
+    background-color: var(--Black);
+}
+.dropdown-content1 h5 
+{
+    color: var(--White);
+}
+.HOME_PAGES .card>div>a
+{
+    color: var(--White);
+}
+.MAIN_PAGE .card>div>a
+{
+    color: var(--White);
+}
+.CONTENT_PAGE .card>div>a
+{
+    color: var(--White);
+}
+.dropdown-content2
+{
+    background-color: var(--Black);
+}
+.dropdown-content2 ul
+{
+    background-color: var(--Black);
+}
+.dropdown-content2 ul li > a
+{
+    color: var(--White);
+}
+.Hero_left_side h1
+{
+    color: var(--White);
+}
+.Hero_left_side p
+{
+    color: var(--Pcolor);
+}
+.Trialbtn:hover
+{
+    background-color: var(--Black);
+}
+.Learnbtn
+{
+    background-color: var(--Black);
+}
+.About_us>h2
+{
+    color: var(--White);
+}
+.About_us_flexcontetnt>div h3
+{
+    color: var(--White);
+}
+.Solutions div h3
+{
+    color: var(--White);
+}
+.blog_section_text_content>h3
+{
+    color: var(--White);
+}
+.blog_section_flexbox_item>p
+{
+    color: var(--Pcolor);
+}
+.blog_section_flexbox_item>h3
+{
+    color: var(--White);
+}
+.experience_left_side_item h3
+{
+    color: var(--White);
+}
+.experience_left_side_item p
+{
+    color: var(--Pcolor);
+}
+.experience_left_side_item>ul>li
+{
+    color: var(--Pcolor);
+}
+.faq_section h3
+{
+    color: var(--White);
+}
+.faq_section_grid h4
+{
+    color: var(--White);
+}
+.faq_section_grid p
+{
+      color:var(--Pcolor);
+}
+.footer_flexbox_item h6
+{
+    color: var(--White);
+}
+.footer_flexbox_item>ul>li>a 
+{
+    color: var(--Pcolor);
+}
+.flast_Section>div:first-child>p
+{
+    color: var(--Pcolor);
+}
+.flast_Section>div>span
+{
+    color: var(--Pcolor);
+}
+.EDemobtn:hover
+{
+    background-color: var(--Black);
+}
+.phone_drop_down_menu
+{
+    background-color: var(--Black);
+}
+.phone_drop_links ul li a
+{
+    color: var(--White);
+}

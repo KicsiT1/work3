@@ -8,6 +8,7 @@
     <!--Linked files-->
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="dark.css"> -->
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,8 @@
     <!--=====Fejlec=====-->
    <header class="header">
         <div class="header_left_side">
-            <img src="img/DataWise logo.png" alt="DataWise site logo">
+            <img class="dlogo" src="img/DataWise logo.png" alt="DataWise site logo">
+            <img class="wlogo" src="img/DataWise white logo.png" alt="DataWise site logo">
             <nav class="nav">
                 <ul>
                 <li class="dropdown">
@@ -193,9 +195,9 @@
 
         <div class="header_right_side">
             <button class="Demobtn">Get a demo</button>
-            <button class="Trialbtn">Start your free trial</button>
+            <button class="NTrialbtn">Start your free trial</button>
             <div class="Hamburger_icon" onclick="DropDown('phone_drop_down_menu')">
-            <img id="HamburgerImg" src="icons/Hamburger menu.png" alt="">
+            <img class="hamburger" id="HamburgerImg" src="icons/Hamburger menu.png" alt="">
             </div>
         </div>
    </header>
@@ -255,7 +257,7 @@
                     </p>
 
                     <div class="Buttons">
-                        <button class="Trialbtn">Start your free trial</button>
+                        <button class="Trialbtn" id="Trialbtn">Start your free trial</button>
                         <button class="Learnbtn">Learn more</button>
                     </div>
                 </div>
@@ -308,7 +310,7 @@
         <section class="About_us">
             <p>ABOUT US</p>
             <h2>Empowering Innovation AI</h2>
-            <p>
+            <p class="About_us_text">
                 we are driven by the vision of transforming businesses with artificial intelligence. Founded in 2024, we <br>
                 have consistently pushed the boundaries of AI to offer smart, scalable, and intuitive solutions that drive <br> 
                 growth and efficiency. <br> <br>
@@ -477,11 +479,14 @@
                         <li>Single permission model for data + AI</li>
                     </ul>
 
-                    <button class="Demobtn">Get a demo</button>
+                    <button class="EDemobtn">Get a demo</button>
                 </div>
 
                 <div class="experience_right_side_item">
-                    <img src="img/Image item9.png" alt="">
+                    <img class="wimg1" src="img/Image item9.png" alt="">
+                    <img class="wimg2" src="img/Image wrapper.png" alt="">
+                    <img class="dimg1" src="img/Image item dark1.png" alt="">
+                    <img class="dimg2" src="img/Image wrapper dark2.png" alt="">
                 </div>
 
             </div>
@@ -581,6 +586,58 @@
             </div>
 
         </section>
+
+        <footer>
+            <div class="footer_flexbox">
+                <div class="footer_flexbox_item">
+                    <img class="dlogo" src="img/FDataWise logo.png" alt="DataWise site logo">
+                    <img class="wlogo" src="img/DataWise white logo.png" alt="DataWise site logo">
+                </div>
+
+                 <div class="footer_flexbox_item">
+                    <h6>About</h6>
+                    <ul>
+                        <li><a href="">Company Overview</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Press & Media</a></li>
+                        <li><a href="">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                  <div class="footer_flexbox_item">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Webinars & Events</a></li>
+                        <li><a href="">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_flexbox_item">
+                    <h6>Support & Contact</h6>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Technical Support</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Community Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flast_Section">
+                <div>
+                    <p>©2023 NIMBUS · All rights reserved.</p>
+                </div>
+
+                <div>
+                    <span>Term of use</span>
+                    <span>Privacy policy</span>
+                    <span>Security</span>
+                </div>
+            </div>
+
+        </footer>
 
    </main>
 

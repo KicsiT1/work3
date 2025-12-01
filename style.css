@@ -16,10 +16,14 @@
     align-items: center;
     justify-content: space-between; 
     padding: 24px 0px 24px 0px;
-    margin: 0px 40px 0px 40px;
+    margin: 0 auto;
+    max-width: 1360px;
     border-bottom: 1px solid rgb(199, 199, 199);
 }
-
+.header_left_side .wlogo
+{
+    display: none;
+}
 .header_left_side 
 {
     display: flex;
@@ -29,12 +33,10 @@
 .nav ul 
 {
     display: flex;
-    list-style-type: none;
     gap: 40px;
 }
 .nav ul li a
 {
-    text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -55,7 +57,8 @@
     display: none;
 }
 /*=====Fejlec->gombok=====*/
-.Demobtn,.Trialbtn,.Learnbtn
+
+.Demobtn,.NTrialbtn,.Learnbtn,.Trialbtn,.EDemobtn
 {
     padding: 16px 20px;
     font-size: 1.1rem;
@@ -67,7 +70,7 @@
 {
     margin-left: 12px;
 }
-.Demobtn,.Learnbtn
+.Demobtn,.Learnbtn,.EDemobtn
 {
     background-color: white;
     color: var(--ButtonTextColor);
@@ -79,13 +82,13 @@
     color: white;
     border: 2px solid var(--GreenButtonColor);
 }
-.Trialbtn
+.NTrialbtn,.Trialbtn,.EDemobtn
 {
     background-color: var(--GreenButtonColor);
     color: white;
     border: none;
 }
-.Trialbtn:hover
+.Trialbtn:hover,.EDemobtn:hover,.EDemobtn:hover,.NTrialbtn:hover
 {
     color: var(--ButtonTextColor);
     background-color: white;
@@ -182,7 +185,6 @@
     margin: 0px 40px 0px 40px;
     list-style-type: none;
     border-bottom: 1px solid rgb(179, 179, 179);
-    cursor: pointer;
 }
 
 .phone_drop_links ul li a:hover
@@ -197,7 +199,6 @@
 .phone_drop_links ul li a
 {
     color: black;
-    text-decoration: none;
     font-weight: bold;
 }
 .Phone_dropdown1_content1 ul li a
@@ -440,15 +441,25 @@
 }
 .experience_left_side_item ul
 {
-    list-style-type: none;
     list-style-image: url(/icons/Icon\ wrapper.png);
-    list-style-position: inside;
     margin-top: 32px;
     margin-bottom: 32px;
 }
 .experience_left_side_item li
 {
     font-size: 1.4rem;
+}
+.experience_right_side_item .wimg2
+{
+    display: none;
+}
+.experience_right_side_item .dimg1
+{
+    display: none;
+}
+.experience_right_side_item .dimg2
+{
+    display: none;
 }
 /*===================FAQ section===================*/
 .faq_section
@@ -476,33 +487,92 @@
 }
 .faq_section_grid
 {
+    max-width: 1204px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:  repeat(3,1fr);
     grid-row-gap: 32px;
 }
-.faq_section_grid_item h4
+.faq_section_grid h4
 {
     font-size: 1.1rem;
     margin: 0px 24px 24px 0px;
 }
-.faq_section_grid_item p
+.faq_section_grid p
+{
+    font-size: 1rem;
+    margin: 0px 24px 16px 0px;
+}
+.faq_section_grid_item4 p
 {
     font-size: 1rem;
     margin: 0px 24px 16px 0px;
 
 }
+/*===================footer===================*/
+.footer_flexbox
+{
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 112px 0px 80px 0px;
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid gray;
+}
+.footer_flexbox_item h6
+{
+    font-size: 1rem;
+}
+.footer_flexbox_item ul
+{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 136px;
+}
+.footer_flexbox_item li
+{
+    margin-top: 12px;
+}
+.footer_flexbox_item a
+{
+    color: var(--AColor);
+}
+.footer_flexbox_item
+{
+    flex: 1 1 200px;
+}
+.footer_flexbox_item:first-child
+{
+    flex: 0 0 200px;
+}
+.footer_flexbox_item .wlogo
+{
+    display: none;
+}
+.flast_Section
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 24px 0px 24px 0px;
+    border-top: 1px solid gray;
+}
+.flast_Section div:last-child>span
+{
+    margin-right: 24px;
+}
 /*===================@media Queries===================*/
 @media screen and (max-width: 1200px) 
 {
-      .nav
-      {
+    .nav
+    {
         display: none;
-      }
-      .Hamburger_icon
-      {
+    }
+    .Hamburger_icon
+    {
         display: block;
         cursor: pointer;
-      }
+    }
 
      .phone_drop_down_menu 
      {
@@ -512,7 +582,55 @@
      {
          display: none;
      }
-
+    .Hero_section,.Partners_section,
+    .About_us,.Solutions,.blog_section,
+    .experience_section,.faq_section,
+    .footer_flexbox,.flast_Section
+    {
+        margin: 0px 40px 0px 40px;
+    }
+    .Hero_section_flexbox
+    {
+        flex-direction: column;
+    }
+    .Hero_left_side
+    {
+        margin-right: auto;
+    }
+    .Hero_right_side
+    {
+        margin-left: auto;
+    }
+    .About_us_text
+    {
+        display: none;
+    }
+    .Solutions_flex_content
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog_section_flexbox
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .experience_section_flexbox
+    {
+        flex-direction: column;
+    }
+    .experience_right_side_item .wimg1
+    {
+        display: none;
+    }
+    .experience_right_side_item .wimg2
+    {
+        display: block;
+        width: 100%;
+    }
+    
     .faq_section_grid 
     {
     grid-template-columns: repeat(2, 1fr);
@@ -521,8 +639,7 @@
       "b e"
       "c f";
     gap: 32px;
-    width: max-content;  
-    margin: 0 auto;    
+    width: 100%
   }
 
   .faq_section_grid_item1 { grid-area: a; }
@@ -531,7 +648,148 @@
   .faq_section_grid_item4 { grid-area: d; }
   .faq_section_grid_item5 { grid-area: e; }
   .faq_section_grid_item6 { grid-area: f; }
+
+
+   .footer_flexbox {
+        flex-wrap: wrap;          
+    }
+
+    .footer_flexbox_item:first-child {
+        flex: 0 0 100%;           
+        margin-bottom: 20px;
+    }
+
+    .footer_flexbox_item {
+        flex: 1 1 150px;          
+        margin-right: 0;
+    }
+
+    .footer_flexbox_item ul {
+        margin-right: 0;
+    }
 }
+
+@media screen and (max-width: 810px) 
+{
+    .header
+    {
+        margin: 0px 24px 0px 24px;
+    }
+    .Demobtn,.NTrialbtn
+    {
+        display: none;
+    }
+    .Hero_section,.Partners_section,
+    .About_us,.Solutions,.blog_section,
+    .experience_section,.faq_section,
+    .footer_flexbox,.flast_Section
+    {
+        margin: 0px 24px 0px 24px;
+    }
+    .Trialbtn,.Learnbtn
+    {
+        display: block;
+        width: 100%;
+        margin: 15px 0px 15px 0px;
+    }
+    .About_us_text
+    {
+        display: block;
+    }
+    .About_us_flexcontetnt
+    {
+        flex-wrap: wrap;
+    }
+    .Solutions_flex_content
+    {
+        justify-content: center;
+    }
+    .Solutions_flex_content_item
+    {
+        width: 100%;
+    }
+    .blog_section_flexbox
+    {
+        justify-content: center;
+    }
+    .blog_section_flexbox_item
+    {
+        width: 100%;
+    }
+    .blog_section_flexbox_item img
+    {
+        width: 100%;
+    }
+    .EDemobtn
+    {
+        display: block;
+        width: 100%;
+        margin: 15px 0px 15px 0px;
+    }
+    .faq_section_grid 
+    {
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+    gap: 32px;
+    width: max-content;  
+    margin: 0 auto;
+    width: 100%;    
+  }
+
+  .faq_section_grid_item1 { grid-area: a; }
+  .faq_section_grid_item2 { grid-area: b; }
+  .faq_section_grid_item3 { grid-area: c; }
+  .faq_section_grid_item4 { grid-area: d; }
+  .faq_section_grid_item5 { grid-area: e; }
+  .faq_section_grid_item6 { grid-area: f; }
+  
+    
+}
+@media screen and (max-width: 450px) {
+    .Buttons
+    {   
+        margin: 0px 24px 0px 24px;
+    }
+    .Trialbtn,.Learnbtn
+    {
+        margin: 0 auto;
+    }
+    .Flex_content1 img
+    {
+        width: 20%;
+    }
+    .Flex_content2 img
+    {
+        width: 20%;
+    }
+    .Flex_content3 img
+    {
+        width: 20%;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .Hero_left_side>h1
+    {
+        font-size: 3.6rem;
+    }
+     .Hero_left_side>p
+    {
+        font-size: 1.5rem;
+    }
+    .Solutions>div>h3
+    {
+        font-size: 2.7rem;
+    }
+}
+
 @media screen and (min-width: 1201px) {
     .phone_drop_down_menu {
         display: none !important;
