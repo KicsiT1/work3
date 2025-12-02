@@ -7,9 +7,10 @@
 :root 
 {
     --HTextColor:#141513;
-    --PTextColor:#3C403A;
+    --PTextColor:#51564E;
     --UL_Li_Color:#3C403A;
     --SpanTextColor:#2E5C1E;
+    --IColor:#2E5C1E;
 }
 h1,h2,h3,h4,h5,h6
 {
@@ -18,8 +19,8 @@ h1,h2,h3,h4,h5,h6
 }
 p
 {
-   
-    color: var(--PTextColor);
+   font-family: "Inter Regular", sans-serif;
+   color: var(--PTextColor);
 }
 span
 {
@@ -34,4 +35,15 @@ ul li
 {
     font-family: "Inter Regular", sans-serif;
     color: var(--UL_Li_Color);
+    list-style-type: none;
+    cursor: pointer;
+    list-style-position: inside;
+}
+a
+{
+    text-decoration: none;
+}
+i:hover
+{
+    color: var(--IColor);
 }

@@ -144,3 +144,49 @@ body
 {
     color: var(--White);
 }
+
+.experience_right_side_item .wimg1
+{
+    display: none;
+}
+.experience_right_side_item .dimg1
+{
+    display: block;
+}
+i
+{
+    color:var(--White) ;
+}
+.header_left_side .dlogo
+{
+    display: none;
+}
+.header_left_side .wlogo
+{
+    display: block;
+}
+.footer_flexbox_item .dlogo
+{
+    display: none;
+}
+.footer_flexbox_item .wlogo
+{
+    display: block;
+}
+@media screen and (max-width: 1200px) 
+{
+    .experience_right_side_item .wimg2
+    {
+        display: none;
+    }
+     .experience_right_side_item .dimg1
+    {
+        display: none;
+    }
+     .experience_right_side_item .dimg2
+    {
+        display: block;
+        width: 100%;
+    }
+
+}

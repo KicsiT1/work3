@@ -5,10 +5,11 @@
     <!--Meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Linked files-->
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="dark.css"> -->
+    <link id="DarkMode" rel="stylesheet" href="dark.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
             <nav class="nav">
                 <ul>
                 <li class="dropdown">
-                    <a href="#Features">Features <img src="icons/Icon18x18.png" alt=""></a>
+                    <a href="#Features">Features <i class="fa-solid fa-angle-down"></i></a>
 
                      <div class="dropdown-content1">
                         <div class="dropdown_flex_content">
@@ -40,7 +41,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -54,7 +55,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -69,7 +70,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -88,7 +89,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -102,7 +103,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -117,7 +118,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +136,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -149,7 +150,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
 
@@ -164,7 +165,7 @@
                                     </div>
 
                                     <div class="arrow">
-                                        <img src="icons/chevron-right, arrow-right.png" alt="">
+                                        <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +175,7 @@
                 </li>
 
                 <li class="dropdown">
-                <a href="#Case_Studies" class="dropdown">Case Studies <img src="icons/Icon18x18.png" alt=""></a>
+                <a href="#Case_Studies" class="dropdown">Case Studies <i class="fa-solid fa-angle-down"></i></a>
                      <div class="dropdown-content2">
                         <ul>
                             <li><a href="#AI_Powered_Predictive_Analytics">AI-Powered Predictive Analytics</a></li>
@@ -194,10 +195,14 @@
         </div>
 
         <div class="header_right_side">
+            <div class="Mode" onclick="ModeSwitching()">
+                <span id="ModText"><i id="IconSun" class="fa-solid fa-sun"></i> <i id="IconMoon" class="fa-solid fa-moon"></i></span>         
+            </div>
             <button class="Demobtn">Get a demo</button>
             <button class="NTrialbtn">Start your free trial</button>
             <div class="Hamburger_icon" onclick="DropDown('phone_drop_down_menu')">
-            <img class="hamburger" id="HamburgerImg" src="icons/Hamburger menu.png" alt="">
+                <i class="fa-solid fa-bars" id="HamburgerIcon"></i>
+                <i class="fa-solid fa-x" id="HamburgerIconx"></i>
             </div>
         </div>
    </header>
@@ -206,14 +211,14 @@
         <div class="phone_drop_links" id="phone_drop_links">
         <ul>
             <li class="Phone_dropdown1" id="Phone_dropdown1">
-                <a href="javascript:void(0);" onclick="DropDown('pddc1','ArrowImg1')">Home layout <img id="ArrowImg1" src="icons/chevron-down, arrow-down.png" alt=""></a>
+                <a href="javascript:void(0);" onclick="DropDown('pddc1','ArrowDown1','ArrowUp1')">Home layout <i id="ArrowDown1" class="fa-solid fa-chevron-down"></i> <i id="ArrowUp1" class="fa-solid fa-chevron-up"></i> </a>
                 <div class="Phone_dropdown1_content1" id="pddc1">
  
                 </div>
             </li>
 
             <li class="Phone_dropdown2" id="Phone_dropdown2">
-                <a href="javascript:void(0);" onclick="DropDown('pddc2','ArrowImg2')">Other main pages <img id="ArrowImg2" src="icons/chevron-down, arrow-down.png" alt=""></a>
+                <a href="javascript:void(0);" onclick="DropDown('pddc2','ArrowDown2','ArrowUp2')">Other main pages <i id="ArrowDown2" class="fa-solid fa-chevron-down"></i> <i id="ArrowUp2" class="fa-solid fa-chevron-up"></i></a>
                             
                 <div class="Phone_dropdown2_content2" id="pddc2">
                     <ul>
@@ -229,7 +234,7 @@
             </li>
 
             <li class="Phone_dropdown3" id="Phone_dropdown3">
-                <a a href="javascript:void(0);" onclick="DropDown('pddc3','ArrowImg3')">Other content page <img id="ArrowImg3" src="icons/chevron-down, arrow-down.png" alt=""></a>
+                <a a href="javascript:void(0);" onclick="DropDown('pddc3','ArrowDown3','ArrowUp3')">Other content page <i id="ArrowDown3" class="fa-solid fa-chevron-down"></i> <i id="ArrowUp3" class="fa-solid fa-chevron-up"></i></a>
 
                  <div class="Phone_dropdown3_content3" id="pddc3">
                     
@@ -590,7 +595,7 @@
         <footer>
             <div class="footer_flexbox">
                 <div class="footer_flexbox_item">
-                    <img class="dlogo" src="img/FDataWise logo.png" alt="DataWise site logo">
+                    <img class="dlogo" src="img/DataWise logo.png" alt="DataWise site logo">
                     <img class="wlogo" src="img/DataWise white logo.png" alt="DataWise site logo">
                 </div>
 

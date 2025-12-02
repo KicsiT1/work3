@@ -52,9 +52,24 @@
     align-items: center;
     gap:12px
 }
-.Hamburger_icon
+.Hamburger_icon /* Hamburger menu*/
 {
     display: none;
+}
+.fa-x
+{
+    display: none;
+}
+.fa-sun
+{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+.fa-moon
+{
+    font-size: 20px;
+    text-align: center;
 }
 /*=====Fejlec->gombok=====*/
 
@@ -108,8 +123,9 @@
   border-radius: 16px;
   box-shadow: var(--BoxShadowColor) 0px 5px 10px, var(--BoxShadowColor) 0px 5px 5px;
 }
+
 .dropdown:hover .dropdown-content1 {
-  display: block;
+    display: block;
 }
 /*inside dropdown*/
 .dropdown_flex_content
@@ -213,9 +229,21 @@
 {
     color: gray;
 }
-.phone_drop_links ul li a img
+.phone_drop_links ul li a .fa-chevron-down  
 {
     float: right;
+}
+.phone_drop_links ul li a  .fa-chevron-up
+{
+    float: right;
+}
+.fa-chevron-down,.fa-chevron-up
+{
+    font-size: 24px;
+} 
+.phone_drop_links ul li a  .fa-chevron-up
+{
+    display: none;
 }
 /*==============Main->Hero section==============*/
 .Hero_section
@@ -301,6 +329,7 @@
     color: var(--Pcolor);
     font-size: 1rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .About_us h2
 {
@@ -323,6 +352,7 @@
 .About_us a
 {
     color: var(--AColor2);
+    font-weight: bold;
 }
 .About_us_flexcontetnt div h3
 {
@@ -335,7 +365,10 @@
     margin: 0 auto;
     padding: 112px 0px 80px 0px;
 }
-
+.Solutions>div>p:first-child
+{
+    font-weight: bold;
+}
 .Solutions>div>p 
 {
     text-align: center;
@@ -385,6 +418,7 @@
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
 }
 .blog_section_text_content>h3
 {
@@ -473,6 +507,7 @@
     color: var(--Pcolor);
     font-size: 1rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .faq_section>h3
 {
@@ -568,12 +603,16 @@
     {
         display: none;
     }
-    .Hamburger_icon
+    .header
+    {
+        margin: 0px 40px 0px 40px;
+    }
+    .Hamburger_icon /*Hamburger menu*/
     {
         display: block;
         cursor: pointer;
+        font-size: 32px;
     }
-
      .phone_drop_down_menu 
      {
          display: none;
@@ -611,11 +650,23 @@
         justify-content: center;
         align-items: center;
     }
+    .Solutions_flex_content_item
+    {
+        width: 48%;
+    }
     .blog_section_flexbox
     {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+    .blog_section_flexbox_item
+    {
+        width: 48%;
+    }
+    .blog_section_flexbox_item img
+    {
+        width: 100%;
     }
     .experience_section_flexbox
     {
