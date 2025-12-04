@@ -1,3 +1,4 @@
+/*===== Color variables =====*/
 :root 
 {
     --GreenButtonColor:#3A7326;
@@ -9,7 +10,7 @@
     --ButtonBorderColor:#A6DC94;
     --Pcolor:#3A7326;
 }
-/*=====Fejlec=====*/
+/*===== Header =====*/
 .header
 {
     display: flex;
@@ -30,6 +31,7 @@
     align-items: center;
     gap: 52px;
 }
+/*===== Navigation menu =====*/
 .nav ul 
 {
     display: flex;
@@ -52,7 +54,8 @@
     align-items: center;
     gap:12px
 }
-.Hamburger_icon /* Hamburger menu*/
+/*===== Hamburger menu =====*/
+.Hamburger_icon
 {
     display: none;
 }
@@ -60,6 +63,7 @@
 {
     display: none;
 }
+/*===== Dark mode menu =====*/
 .fa-sun
 {
     display: none;
@@ -71,8 +75,7 @@
     font-size: 20px;
     text-align: center;
 }
-/*=====Fejlec->gombok=====*/
-
+/*===== Header button =====*/
 .Demobtn,.NTrialbtn,.Learnbtn,.Trialbtn,.EDemobtn
 {
     padding: 16px 20px;
@@ -109,7 +112,7 @@
     background-color: white;
     border: 2px solid var(--GreenButtonColor);
 }
-/*dropdown */
+/*===== Dropdown menu =====*/
 .dropdown {
   position: relative;
 }
@@ -127,7 +130,7 @@
 .dropdown:hover .dropdown-content1 {
     display: block;
 }
-/*inside dropdown*/
+/*===== Inside Dropdown menu =====*/
 .dropdown_flex_content
 {
     display: flex;
@@ -145,6 +148,7 @@
 {
     width: 364px;
 }
+/*===== Inside Dropdown card menu settings =====*/
 .card
 {
     display: flex;
@@ -163,7 +167,7 @@
     margin-bottom: 4px;
 }
 
-/*Case Studies dropdown*/
+/*===== Case Studies Dropdown =====*/
 .dropdown-content2 {
   display: none;
   position: absolute;
@@ -188,7 +192,7 @@
 .dropdown-content2 > ul > li:last-child {
     border-bottom: none;
 }
-/*Phone Drop-down*/
+/*===== Phone Drop-down =====*/
 .phone_drop_down_menu {
   overflow: hidden;
   background-color: white;
@@ -245,7 +249,7 @@
 {
     display: none;
 }
-/*==============Main->Hero section==============*/
+/*============== Main->Hero section ==============*/
 .Hero_section
 {
     max-width: 1204px;
@@ -287,7 +291,7 @@
     margin-bottom: 48px;
     line-height: 2.5rem;
 }
-/*==============Partners section==============*/
+/*============== Partners section ==============*/
 .Partners_section
 {
     display: flex;
@@ -317,7 +321,7 @@
     from {translate: 0;}
     to   {translate: -100%;}
 }
-/*==============About us section==============*/
+/*============== About us section ==============*/
 .About_us
 {
     max-width: 1204px;
@@ -358,7 +362,7 @@
 {
     font-size: 39px;
 }
-/*==============Solutions section==============*/
+/*============== Solutions section ==============*/
 .Solutions
 {
     max-width: 1204px;
@@ -405,7 +409,7 @@
     margin-top: 12px;
     line-height: 1.8rem;
 }
-/*===================Blog section===================*/
+/*=================== Blog section ===================*/
 .blog_section
 {
     max-width: 1204px;
@@ -450,7 +454,7 @@
     margin-bottom: 16px;
     font-size: 1.3rem;
 }
-/*===================experience section===================*/
+/*=================== Experience section ===================*/
 .experience_section
 {
     max-width: 1204px;
@@ -495,7 +499,7 @@
 {
     display: none;
 }
-/*===================FAQ section===================*/
+/*=================== FAQ section ===================*/
 .faq_section
 {
     max-width: 1204px;
@@ -543,7 +547,7 @@
     margin: 0px 24px 16px 0px;
 
 }
-/*===================footer===================*/
+/*=================== Footer ===================*/
 .footer_flexbox
 {
     max-width: 1204px;
@@ -607,7 +611,7 @@
     {
         margin: 0px 40px 0px 40px;
     }
-    .Hamburger_icon /*Hamburger menu*/
+    .Hamburger_icon
     {
         display: block;
         cursor: pointer;

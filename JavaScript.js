@@ -1,3 +1,26 @@
+// ATTENTION: THIS FUNCTION PERFORMS TWO TASKS.
+/*
+    /===================== 1 =====================/
+    The function's purpose is to open the phone 
+    menu when the screen width is small and the 
+    phone hamburger menu is displayed.
+    /=============================================/
+
+    /===================== 2 =====================/
+    When the user opens the phone menu, some 
+    menu items (submenus) within it can also be opened. 
+    This function also performs this task.
+    /=============================================/
+
+*/
+// How the function works.
+/*
+    1.TagId         <-- This parameter tells the function what you want to display.
+    2.ArrowDownID AND ArrowUpID     <-- These two values ​​must be specified so that 
+                                        when the user clicks on a menu item, 
+                                        the icon on the left side of the menu 
+                                        item changes.
+*/
 function DropDown(TagId,ArrowDownID,ArrowUpID)
 {
     const Tag = document.getElementById(TagId);
@@ -53,7 +76,7 @@ function DropDown(TagId,ArrowDownID,ArrowUpID)
             }
         break;
 
-         case "pddc3":
+        case "pddc3":
             if (Tag.style.display === "block") {
                 if (Tag) Tag.style.display = "none";
                 if(ArrowDown)   ArrowDown.style.display = "block";
@@ -68,9 +91,14 @@ function DropDown(TagId,ArrowDownID,ArrowUpID)
         break;
 
         default:
-            console.log("Nem jo tag-et adtal meg!")    
+            console.log("DropDown function switch: Don't forget that the function also contains a switch.")    
         }
 }
+
+// The function changes the theme of the page.
+//      1.It does this by manipulating a meta tag that 
+//      contains the CSS file for the theme.
+//      2.This function also modifies (replaces) the icons.
 function ModeSwitching()
 {
     const SunIcon = document.getElementById("IconSun");
@@ -90,9 +118,7 @@ function ModeSwitching()
     }
 }
 
-
-
-
+// Some elements are set to default when the page width is resized.
 window.addEventListener('resize', function() {
     if (window.innerWidth > 1200) {
         const menu = document.getElementById("phone_drop_down_menu");
