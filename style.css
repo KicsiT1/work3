@@ -827,6 +827,10 @@
     {
         width: 20%;
     }
+    .Learnbtn
+    {
+        margin-top: 10px;
+    }
 }
 
 
@@ -842,6 +846,10 @@
     .Solutions>div>h3
     {
         font-size: 2.7rem;
+    }
+    .Learnbtn
+    {
+        margin-top: 10px;
     }
 }
 
